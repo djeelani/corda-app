@@ -1,3 +1,55 @@
+# R3 Corda Yo App
+
+A Corda application.
+
+## Prerequisites
+
+  - Java - 1.8.0_131
+  - Kotlin - 1.1.2-2
+  - R3 Corda - 0.11.0
+
+# Features
+
+## R3 Corda and Kotlin
+
+### cordapp-template
+
+Corda's [cordapp-template](https://github.com/corda/cordapp-template) is used to get an application quickly off the ground.
+
+### Kotlin
+
+We use Kotlin to manage application. Kotlin is a statically-typed programming language that runs on the Java Virtual Machine and also can be compiled to JavaScript source code or uses the LLVM compiler infrastructure.
+
+# Installation
+
+## Checkout:
+Checkout release-M11.0 branch from git repository [cordapp-template](https://github.com/corda/cordapp-template).
+Develop an app using Kotlin language on top of it.
+
+## Build application:
+Build the application using 'gradlew.bat deployNodes'
+
+## Run Nodes:
+Navigate to the path 'kotlin-source/build/nodes'
+Run nodes using 'runnodes.bat --log-to-console --logging-level=DEBUG'
+
+## Interacting
+CorDapp defines a couple of HTTP API end-points and also serves some static web content. Initially, these return generic template responses.
+The nodes can be found using the following port numbers, defined in the build.gradle, as well as the node.conf file for each node found under kotlin/build/nodes/NodeX or java/build/nodes/NodeX:
+```sh
+NodeA - localhost:10007
+NodeB - localhost:10010
+```
+## Running the Nodes in Multiple Machines
+To run nodes in multiple machines, refer [here](#running-the-nodes-across-multiple-machines)
+
+# Links Referred:
+
+https://github.com/corda/cordapp-tutorial  
+https://vimeo.com/r3video/videos  
+https://vimeo.com/192797322/aab499b152  
+https://vimeo.com/217809526  
+
 ![Corda](https://www.corda.net/wp-content/uploads/2016/11/fg005_corda_b.png)
 
 # CorDapp Template
